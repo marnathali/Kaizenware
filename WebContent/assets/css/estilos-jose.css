@@ -1,0 +1,56 @@
+* {
+    margin: 0px;
+    padding: 0px;
+}
+
+.vertical-center {
+    display: flex;
+    justify-content: center;
+    align-content: center;
+    flex-direction: column;
+}
+
+.navigation-bar2 {
+    background-color: darkturquoise;
+}
+
+.ion-navicon {
+    margin-top: 150px;
+}
+
+.small-img {
+    width: 150px;
+}
+
+.small-img img {
+    max-width: 100%;
+    
+}
+
+hr {
+    margin: 0px;
+}
+
+.row + hr {
+    margin-top: 20px;
+    margin-bottom: 20px;
+}
+
+button + hr {
+    margin-top: 20px;
+    margin-bottom: 20px;
+}
+
+.center-content {
+    justify-content: center;
+}
+
+.center-padding {
+    display: block;
+    padding-right: auto;
+    padding-left: auto;
+}
+
+.mb-20 {
+    margin-bottom: 20px;
+}
