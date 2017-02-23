@@ -9,7 +9,7 @@
         menu.mouseout(function(){  
             hideOptions($(this));  
         });  
-    })  
+    }) 
       
     //funcion que MUESTRA todos los elementos del menu  
     function displayOptions(e){  

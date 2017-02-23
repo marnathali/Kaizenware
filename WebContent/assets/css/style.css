@@ -143,11 +143,12 @@ section{
 /*--Imagenes--*/
 
 .ubutia-icon{ /* Cambios */
-	background:transparent url(../images/logo1.png) no-repeat;
-    width: 150px;
-    height: 150px;
+	background:transparent url(../images/LOGO-KG.png) no-repeat;
+    width:100%;
+    max-width:400px;
+    height: 400px;
 	display:block;
-}
+} 
 
 
 
@@ -188,16 +189,16 @@ section{
 	transition: all 0.3s ease-in-out;
 }
 .ubutia-btn:hover{
-	background-color: #51c2b9;
+	background-color: ##47b5b9;
 	color: #fff;
 }
 .solid{
-	background-color: #51c2b9;
+	background-color: ##47b5b9;
 	color: #fff;
 }
 .solid:hover{
 	background-color: #fff;
-	color: #51c2b9;
+	color: #47b5b9;
 }
 .small-btn{
 	padding: 10px 130px;
@@ -290,7 +291,7 @@ section{
     margin-top: 20px;
 }
 .menu h1.logo a:hover {
-    color: #1abc9c;
+    color: rgb(43, 134, 193);
 }
 .menu img.logo {
     margin: 0px 0px;
@@ -471,67 +472,7 @@ ul{
 	background-color: white;
 }
  
- /*
-#menu-item{
-	transition: all 0.3s ease-in-out;
-}
-.menu-item{
-	background-color: #1a1a1a;
-	text-align: center;
-	font-size: 16px;
-	text-transform: uppercase;
-}
-.menu-item ul{
-	padding-left: 0;
-	margin-bottom: 0;
-}
-.menu-item ul a li{
-	padding: 15px 0;
-	list-style-type: none;
-	color: #fff;
-	border-bottom: 1px solid rgba(255, 255, 255, 0.2);
-}
-.menu-item ul a:hover li{
-	color: #51c2b9;
-	text-decoration: none;
-}
-.hide-menu{
-	margin-top: -377px;
-}
-.show-menu{
-	margin-top: 0;
-}
-.dark-bar{
-	background-color: #424242;
-	background-image: none;
-}
-.navigation-bar{
-	border-bottom: 1px solid rgba(255, 255, 255, 0.2);
-	padding: 15px 0;
-	font-size: 30px;
-}
-.navigation-bar a{
-	color: #fff;
-}
-.menu{
-	position: relative;
-	display: inline-block;
-}
 
-.menu:after{
-	position: absolute;
-	left: -65px;
-	top: 10px;
-	color: #fff;
-	font-size: 16px;
-}
-.m:after{
-	content: 'MENU';
-}
-.c:after{
-	content: 'CLOSE';
-}
-*/
 
 /*Home page*/
 .header{
@@ -766,3 +707,4 @@ ul{
 hr {
     margin: 0px;
 }
+

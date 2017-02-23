@@ -28,8 +28,16 @@ $(document).ready(function() {
 		    }
 		});
 
+    
+    //nuevo popup
+    $('.launch-modal').on('click', function(e){
+    e.preventDefault();
+    $( '#' + $(this).data('modal-id') ).modal();
+});
+    //------------------------
 
  	// Popup
+
 
  	$('.popup-youtube, .popup-vimeo, .popup-gmaps').magnificPopup({
         disableOn: 700,
