@@ -42,7 +42,7 @@
                     </div>
                 </nav>
 			</header>
-        <nav class="menu" id="theMenu">
+        <nav class="menu nav-scroll" id="theMenu">
 		<div class="menu-wrap">
         <div>
 		<h1 class="logo"><a class="center-block" href="../index.html#home">KAIZENWARE</a></h1>
@@ -56,10 +56,10 @@
                 <table>
                     <tr>
                         <td>
-                            <a href="#"><sub>Perfil</sub></a>
+                            <a href="miperfil.html"><sub>Perfil</sub></a>
                         </td>
                         <td>
-                            <a href="#"><sub>Cerrar Sesión</sub></a> 
+                            <a href="../index.html"><sub>Cerrar Sesi&oacute;n</sub></a> 
                         </td>
                     </tr>
                 </table>
@@ -71,11 +71,20 @@
 <!--                     <a href="#contact"><li>contactanos</li></a> -->
 <!--                     <a href="Vista/login.jsp"><li>Iniciar Sesion</li></a> -->
                     <li>
-                        <ul id="gestiones" class="dropdown">
-                        	<li class="active">
-                                <a href="#">Gestionar</a>
+                        <a href="javascript:;" data-toggle="collapse" data-target="#demo"><i class="fa fa-fw fa-arrows-v"></i> Dropdown <i class="fa fa-fw fa-caret-down"></i></a>
+                        <ul id="demo" class="collapse">
+                            <li>
+                                <a href="#">Dropdown Item</a>
                             </li>
-                            <li class="second-lvl first">
+                            <li>
+                                <a href="#">Dropdown Item</a>
+                            </li>
+                        </ul>
+                    </li>
+                    <li>
+                        <a href="javascript:;" data-toggle="collapse" data-target="#gestiones">Gestionar
+                        <ul id="gestiones" class="collapse">
+                        	<li class="second-lvl first">
                                 <a href="#">Clientes</a>
                             </li>
                             <li class="second-lvl">

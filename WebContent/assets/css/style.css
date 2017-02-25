@@ -68,7 +68,6 @@ section{
 }
 .form-control{
 	border-radius: 0;
-	padding: 25px;
     font-size: 18px;
     font-style: italic;
     background-color: transparent;
@@ -81,7 +80,7 @@ section{
 	box-shadow: inset 0 1px 1px rgba(0,0,0,.075),0 0 8px rgba(81, 194, 185, 0.6);
 }
 .form-control::-webkit-input-placeholder {
-    color: #fff;
+    color: #cdcdcd;
 }
 .form-control:-moz-placeholder { /* Firefox 18- */
     color: #fff;  
@@ -90,7 +89,7 @@ section{
     color: #fff;  
 }
 .form-control:-ms-input-placeholder {  
-    color: #fff;  
+    color: #000;  
 }
 
 .element .form-control::-webkit-input-placeholder {
@@ -278,7 +277,7 @@ section{
     opacity: 0.95;
     background: #1a1a1a;
     width: 250px;
-    height: 100%}
+    height: auto;}
     
     .menu h1.logo a {
     font-family: Raleway, Helvetica, Arial, sans-serif;
@@ -461,6 +460,7 @@ ul{
 	list-style-type: none;
 }
 
+/*fondo body*/
 .color-fondo {
     background-color:  rgba(43, 134, 193, 0.5);
 }
@@ -708,3 +708,19 @@ hr {
     margin: 0px;
 }
 
+
+.nav-scroll {
+    max-height: auto;
+    overflow-y: auto;
+    overflow-x: hidden;
+}
+
+.input-lg {
+    border-color: transparent;
+    background-color: transparent;
+}
+
+.input-group-addon {
+    border-color: transparent;
+    background-color: transparent;
+}

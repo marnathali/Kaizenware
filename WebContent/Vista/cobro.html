@@ -31,23 +31,30 @@
     <body class="color-fondo">
         <div class="main">
 			<header>
-                 <nav class="navbar navbar-kaizen">
-                    <div class="container">
+                <nav class="">   
                         <div>
-                            <div class="col-xs-3">
-                                 <div class="logo">
-                                    <a href="../index.html"><span class="ubutia-icon"></span></a>
+                        <div class="container">
+                            <div class="row">
+                                <div class="col-xs-6">
+                                     <div class="logo small-img">
+                                        <a href="../index.html"><img src="../assets/images/LOGO-KG.png"></a>
+                                    </div>
+                                </div>
+                                <div class="col-xs-6 text-right">
+                                    <div class="menu m">
+                                        <a href="#"><span ></span></a>
+                                    </div>
                                 </div>
                             </div>
                         </div>
                     </div>
                 </nav>
 			</header>
-        <nav class="menu" id="theMenu">
+        <nav class="menu nav-scroll" id="theMenu" role="navigation">
 		<div class="menu-wrap">
         <div>
 		<h1 class="logo"><a class="center-block" href="../index.html#home">KAIZENWARE</a></h1>
-		<i class="fa fa-arrow-right menu-close"></i>
+		<i class="fa fa-arrow-rigth menu-close"></i>
                 <div class="small-img">
                     <a href="#">
                         <img class="img-circle center-block" src="../assets/images/img2.jpg" alt="Foto de Perfil">
@@ -57,10 +64,10 @@
                 <table>
                     <tr>
                         <td>
-                            <a href="#"><sub>Perfil</sub></a>
+                            <a href="miperfil.html"><sub>Perfil</sub></a>
                         </td>
                         <td>
-                            <a href="#"><sub>Cerrar Sesión</sub></a> 
+                            <a href="../index.html"><sub>Cerrar Sesi&oacute;n</sub></a> 
                         </td>
                     </tr>
                 </table>
@@ -68,78 +75,75 @@
                 <hr/>
                 <ul>
                     <a href="../index.html"><li>Home</li></a>
-<!--                     <a href="#about"><li>¿Quienes somos?</li></a> -->
-<!--                     <a href="#contact"><li>contactanos</li></a> -->
-<!--                     <a href="Vista/login.jsp"><li>Iniciar Sesion</li></a> -->
                     <li>
-                        <ul id="gestiones" class="dropdown">
-                        	<li class="active">
-                                <a href="#">Gestionar</a>
-                            </li>
+                        <a href="javascript:;" data-toggle="collapse" data-target="#gestiones">Gestionar</a>
+                        <ul id="gestiones" class="collapse">
                             <li class="second-lvl first">
-                                <a href="#">Clientes</a>
+                                <a href="VCliente.html">Clientes</a>
                             </li>
                             <li class="second-lvl">
-                                <a href="#">Candidatos</a>
+                                <a href="VCandidato.html">Candidatos</a>
                             </li>
                             <li class="second-lvl">
-                                <a href="#">Proyectos</a>
+                                <a href="VProyecto.html">Proyectos</a>
                             </li>
                             <li class="second-lvl">
-                                <a href="#">Cargos</a>
+                                <a href="VCargos.html">Cargos</a>
                             </li>
                             <li class="second-lvl">
-                                <a href="#">Asignar Cargos</a>
+                                <a href="VAsignarEC.html">Asignar Cargos</a>
                             </li>
                             <li class="second-lvl last">
-                                <a href="#">Días Feriados</a>
+                                <a href="VDiaFeriado.html">D&iacute;as Feriados</a>
+                            </li>
+                            <li class="second-lvl first">
+                                <a href="VUsuario.html">Usuarios</a>
                             </li>
                         </ul>
                     </li>
                     <li>
-                        <ul id="administrar" class="dropdown">
-                        	<li class="active">
-                                <a href="#">Administrar</a>
-                            </li>
+                        <a href="javascript:;" data-toggle="collapse" data-target="#administrar">Administrar</a>
+                        <ul id="administrar" class="collapse">
                             <li class="second-lvl first">
-                                <a href="#">Entrevistas</a>
+                                <a href="VEntrevista.html">Entrevistas</a>
                             </li>
                             <li class="second-lvl">
-                                <a href="#">Asistencias</a>
+                                <a href="VAsistencia.html">Asistencias</a>
                             </li>
                             <li class="second-lvl">
-                                <a href="#">Faltas</a>
+                                <a href="falta.html">Faltas</a>
                             </li>
                             <li class="second-lvl">
-                                <a href="#">Cobros</a>
+                                <a href="cobro.html">Cobros</a>
                             </li>
                             <li class="second-lvl last">
-                                <a href="#">Pagos</a>
+                                <a href="pago.html">Pagos</a>
                             </li>
                         </ul>
                     </li>
                     <li>
-                        <ul id="reportes" class="dropdown">
-                        	<li class="active">
-                                <a href="#">Reportes</a>
-                            </li>
+                        <a href="javascript:;" data-toggle="collapse" data-target="#reportes">Reportes</a>
+                        <ul id="reportes" class="collapse">
                             <li class="second-lvl first">
-                                <a href="#">Candidatos</a>
+                                <a href="VConsultarCliente.html">Clientes</a>
                             </li>
                             <li class="second-lvl">
-                                <a href="#">Entrevistas</a>
+                                <a href="VConsultarCandidato.html">Candidatos</a>
                             </li>
                             <li class="second-lvl">
-                                <a href="#">Horas Trabajadas</a>
+                                <a href="VConsultarEntrevistas.html">Entrevistas</a>
                             </li>
                             <li class="second-lvl">
-                                <a href="#">Record de Pagos</a>
+                                <a href="VConsultarHorasT.html">Horas Trabajadas</a>
                             </li>
                             <li class="second-lvl">
-                                <a href="#">Utilidad</a>
+                                <a href="consultar-pagos2.html">Record de Pagos</a>
+                            </li>
+                            <li class="second-lvl">
+                                <a href="consultar-utilidad.html">Utilidad</a>
                             </li>
                             <li class="second-lvl last">
-                                <a href="#">Faltas</a>
+                                <a href="consultar-faltas.html">Faltas</a>
                             </li>
                         </ul>
                     </li>
