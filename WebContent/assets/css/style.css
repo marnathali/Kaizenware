@@ -83,26 +83,26 @@ section{
     color: #cdcdcd;
 }
 .form-control:-moz-placeholder { /* Firefox 18- */
-    color: #fff;  
+    color: #fff;
 }
 .form-control::-moz-placeholder {  /* Firefox 19+ */
-    color: #fff;  
+    color: #fff;
 }
-.form-control:-ms-input-placeholder {  
-    color: #000;  
+.form-control:-ms-input-placeholder {
+    color: #000;
 }
 
 .element .form-control::-webkit-input-placeholder {
     color: #424242;
 }
 .element .form-control:-moz-placeholder { /* Firefox 18- */
-    color: #424242;  
+    color: #424242;
 }
 .element .form-control::-moz-placeholder {  /* Firefox 19+ */
-    color: #424242;  
+    color: #424242;
 }
-.element .form-control:-ms-input-placeholder {  
-    color: #424242;  
+.element .form-control:-ms-input-placeholder {
+    color: #424242;
 }
 
 
@@ -147,7 +147,7 @@ section{
     max-width:400px;
     height: 400px;
 	display:block;
-} 
+}
 
 
 
@@ -223,29 +223,8 @@ section{
 .headings p{
 	margin-bottom: 80px;
 }
-.social-icons ul{
-	text-align: center;
-	padding-left: 0;
-	display: inline-block;
-}
-.social-icons ul a li{
-	display: inline-block;
-	list-style-type: none;
-    border: 2px solid #51c2b9;
-    margin-right: 10px;
-    background-color: #51c2b9;
-    color: #fff;
-	font-size: 18px;
-    line-height: 32px;
-    width: 36px;
-}
-.social-icons ul a li:last-child{
-	margin-right: 0;
-}
-.social-icons ul a:hover li{
-	color: #51c2b9;
-	background-color: #fff;
-}
+
+
 
 
 
@@ -267,7 +246,7 @@ section{
 }
 .menu.menu-open {
     right: 0;
-    
+
 }
 
 .menu-wrap { /* cambios */
@@ -278,7 +257,7 @@ section{
     background: #1a1a1a;
     width: 250px;
     height: auto;}
-    
+
     .menu h1.logo a {
     font-family: Raleway, Helvetica, Arial, sans-serif;
     font-size: 16px;
@@ -444,12 +423,12 @@ section{
 }
 
  /*nuevoo*/
- 
+
 ul{
 	padding-left: 0;
 	margin-bottom: 0;
 }
- 
+
  li{
 	padding: 0 0;
 	list-style-type: none;
@@ -471,7 +450,7 @@ ul{
     opacity: 1;
 	background-color: white;
 }
- 
+
 
 
 /*Home page*/
@@ -639,7 +618,7 @@ ul{
 .footer{
 	background-color: #202020;
 	text-align: center;
-	padding: 60px 0;
+	padding: 20px 0px;
 }
 .footer span{
 	color: #51c2b9;
@@ -694,16 +673,16 @@ ul{
 .ion-navicon {
     margin-top: 150px;
 }
-
+/*logo pequeño del header*/
 .small-img {
-    width: 150px;
+    width: 100px;
 }
 
 .small-img img {
     max-width: 100%;
-    
-}
 
+}
+/*---------------------------*/
 hr {
     margin: 0px;
 }
@@ -723,4 +702,9 @@ hr {
 .input-group-addon {
     border-color: transparent;
     background-color: transparent;
+}
+
+.page-head {
+    background: #1a1a1a;
+    opacity: 0.95;
 }

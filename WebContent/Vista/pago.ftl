@@ -1,54 +1,53 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-	     <meta charset="utf-8">
+    <head>
+        <meta charset="utf-8">
         <meta http-equiv="X-UA-Compatible" content="IE=edge">
         <meta name="viewport" content="width=device-width, initial-scale=1">
 
-        <title>Usuario</title>
+        <title>KaizenWare | Home</title>
         <!-- logo barra -->
         <link rel="shortcut icon" type="image/x-icon" href="../assets/images/logo1.png"/>
 
+        <!--estilo de formularios-->
+        <link href="../assets/css/bootstrap.min.css" rel="stylesheet">
+         <!--estilo de botones, al quitar se ven planos-->
+         <link href="../assets/css/bootstrap-theme.min.css" rel="stylesheet">
+      <!--cabecera + footer + menu-->
+       <link href="../assets/css/style.css" rel="stylesheet">
+       <!--separacion entre boton guardar y cancelar-->
+        <link href="../assets/css/estilos-jose.css" rel="stylesheet">
 
-				       <!--estilo de formularios-->
-				       <link href="../assets/css/bootstrap.min.css" rel="stylesheet">
-				        <!--estilo de botones, al quitar se ven planos-->
-				        <link href="../assets/css/bootstrap-theme.min.css" rel="stylesheet">
-				     <!--cabecera + footer + menu-->
-				       <link href="../assets/css/style.css" rel="stylesheet">
-				      <!--separacion entre boton guardar y cancelar-->
-				       <link href="../assets/css/estilos-jose.css" rel="stylesheet">
 
 
         <!--[if lt IE 9]>
         <script src="https://oss.maxcdn.com/html5shiv/3.7.3/html5shiv.min.js"></script>
         <script src="https://oss.maxcdn.com/respond/1.4.2/respond.min.js"></script>
         <![endif]-->
-
-</head>
- <body class="color-fondo">
+    </head>
+    <body class="color-fondo">
         <div class="main">
-			<header>
-               <header>
-                <nav class="">
-                        <div>
-                        <div class="container">
-                            <div class="row">
-                                <div class="col-xs-6">
-                                     <div class="logo small-img">
-                                        <a href="../index.html"><img src="../assets/images/LOGO-KG.png"></a>
-                                    </div>
-                                </div>
-                                <div class="col-xs-6 text-right">
-                                    <div class="menu m">
-                                        <a href="#"><span ></span></a>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                </nav>
-			</header>
+        	<#include "/usuarios/header-admin.ftl">
+<!-- 			<header> -->
+<!--                 <nav class=""> -->
+<!--                         <div> -->
+<!--                         <div class="container"> -->
+<!--                             <div class="row"> -->
+<!--                                 <div class="col-xs-6"> -->
+<!--                                      <div class="logo small-img"> -->
+<!--                                         <a href="../index.html"><img src="../assets/images/LOGO-KG.png"></a> -->
+<!--                                     </div> -->
+<!--                                 </div> -->
+<!--                                 <div class="col-xs-6 text-right"> -->
+<!--                                     <div class="menu m"> -->
+<!--                                         <a href="#"><span ></span></a> -->
+<!--                                     </div> -->
+<!--                                 </div> -->
+<!--                             </div> -->
+<!--                         </div> -->
+<!--                     </div> -->
+<!--                 </nav> -->
+<!-- 			</header> -->
         <nav class="menu nav-scroll" id="theMenu" role="navigation">
 		<div class="menu-wrap">
         <div>
@@ -146,14 +145,13 @@
                             </li>
                         </ul>
                     </li>
-
-
                 </ul>
             </div>
         <!-- Menu button -->
         <div id="menuToggle" class="ion-navicon _ion-android-menu"><i class="fa fa-bars"></i>
         </div>
 	</nav>
+
 			<div id="page-wrapper" class="container-fluid">
 
             <div class="contenedor-principal">
@@ -161,90 +159,145 @@
                 <!-- Page Heading -->
                 <div class="row">
                     <div class="col-lg-12">
-                     <h1 class="page-header">
-                             Usuario
-                            <small> GESTIONAR</small>
+                        <h1 class="page-header">
+                            Gestión de Pagos
+<!--                             <small>Subheading</small> -->
                         </h1>
-
                         <ol class="breadcrumb">
                             <li>
-                                <i class="fa fa-dashboard"></i>  <a href="">Usuario</a>
+                                <i class="fa fa-dashboard"></i>Administrar
                             </li>
                             <li class="active">
-                                <i class="fa fa-file"></i> <a href=""></a>
+                                <i class="fa fa-file"></i> Pagos
                             </li>
                         </ol>
                     </div>
                 </div>
                 <!-- /.row -->
 
-
-
-
                 <div class="row">
-                    <div class="col-lg-9">
+                    <div class="col-lg-12">
+
+                        <h2 class="col-lg-offset-3">Pagos Pendientes por Empleado</h2>
+
+                        <div class="table-responsive">
+                        <table class="table table-striped text-center">
+                            <thead class="bg-primary">
+                                <tr>
+                                    <th>Código Empleado</th>
+                                    <th>Nombre y Apellido</th>
+                                    <th>Proyecto</th>
+                                    <th>Cargo</th>
+                                    <th>Mes</th>
+                                    <th>Horas a Pagar</th>
+                                </tr>
+                            </thead>
+                            <tbody id="tb-empleados">
+                                <tr>
+                                    <td></td>
+                                    <td></td>
+                                    <td></td>
+                                    <td></td>
+                                    <td></td>
+                                    <td></td>
+                                </tr>
+                                <tr>
+                                    <td></td>
+                                    <td></td>
+                                    <td></td>
+                                    <td></td>
+                                    <td></td>
+                                    <td></td>
+                                </tr>
+                                <tr>
+                                    <td></td>
+                                    <td></td>
+                                    <td></td>
+                                    <td></td>
+                                    <td></td>
+                                    <td></td>
+                                </tr>
+                                <tr>
+                                    <td></td>
+                                    <td></td>
+                                    <td></td>
+                                    <td></td>
+                                    <td></td>
+                                    <td></td>
+                                </tr>
+                            </tbody>
+                        </table>
+                        </div>
+
+                        <button type="submit" class="btn btn-primary center-block">Procesar Pago</button>
+
+                        <hr/>
+
 
                         <form role="form">
+                            <div class="col-lg-6">
 
-                          <div class="form-group">
-                        <fieldset>
-                      <p class="help-block">Datos del USuario</p>
-                        <label>Cédula:</label>
                             <div class="form-group">
+                                <label>Número Recibo de Pago</label>
+                                <input class="form-control" disabled>
+                            </div>
 
-                                <div class="col-xs-6 ">
-                                    <input class="form-control" placeholder="Introduzca Cedula/Rif">
+                            <div class="form-group">
+                                <label>Código del Empleado</label>
+                                <input class="form-control" disabled>
+                            </div>
 
+                            <div class="form-group">
+                                <label>Nombre del Empleado</label>
+                                <input class="form-control" disabled>
+                            </div>
+                            </div>
+
+                            <div class="col-lg-6">
+                                <div class="form-group center-block">
+                                    <label>Fecha de Emisión</label>
+                                    <input type="date" class="form-control" disabled>
                                 </div>
-                                    <div class="col-xs-6 ">
 
-
-                                         <button type="submit" class="btn btn-primary">Buscar</button>
-                                 </div>
-                                 </div>
-                        </fieldset>
-
+                                <div class="form-group">
+                                    <label>Proyecto / Cargo</label>
+                                    <input type="text" class="form-control" disabled>
                                 </div>
 
-
-
-                            <div class="form-group">
-                             <div class="col-xs-6">
-
-                                <label>Rol</label>
-                                    <select class="form-control">
-                                    <option>vacio</option>
-
-                                </select>
-
-                                  <label>UserName:</label>
-                                <input class="form-control" placeholder="Introduzca Usuario">
-                                  <label>Contraseña:</label>
-                                <input class="form-control" placeholder="Introduzca Contraseña">
-                                <label>Estatus:</label>
-                                <input class="form-control" placeholder="Introduzca Estatus">
-                            </div>
+                                <div class="form-group">
+                                    <label>Monto a Pagar</label>
+                                    <input class="form-control" disabled>
+                                    <p class="">Horas a pagar * Salario por hora</p>
+                                </div>
                             </div>
 
-
-
-
-                            <div class="form-group">
-                             <div class="col-xs-12">
-                                 <p class="help-block">Opciones:</p>
-                                  <button type="submit" class="btn btn-primary">Guardar</button>
-                                  <button type="submit" class="btn btn-primary">Modificar</button>
-                                  <button type="submit" class="btn btn-primary">Eliminar</button>
-                                  <button type="reset" class="btn btn-primary">Cancelar</button>
+                            <div class="col-lg-12">
+                                <div class="form-group">
+                                    <label>Descripción</label>
+                                    <textarea class="form-control" rows="3"></textarea>
+                                </div>
                             </div>
-                             </div>
 
+                            <div class="row">
+                                <div class="col-lg-6">
+                                    <button type="submit" class="btn btn-primary center-block mb-20">Guardar</button>
+                                </div>
+                                <div class="col-lg-6">
+                                    <button type="reset" class="btn btn-primary center-block mb-20">Cancelar</button>
+                                </div>
+                            </div>
 
-                </form>
-               </div>
-               </div>
-               </div>
-               </div>
+                        </form>
+
+                    </div>
+                </div>
+                <!-- /.row -->
+
+            </div>
+            <!-- /.container-fluid -->
+
+        </div>
+        <!-- /#page-wrapper -->
 
         <footer class="footer">
                 <div class="container">

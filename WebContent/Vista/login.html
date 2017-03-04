@@ -9,22 +9,26 @@
     <meta name="description" content="inicio de sesion">
     <meta name="author" content="Maria Anzola">
 
-    <title>Inicio de Sesion</title>
+    <title>Iniciar Sesion</title>
               <!-- logo barra -->
         <link rel="shortcut icon" type="image/x-icon" href="../assets/images/LOGO-KG.png"/>
 
-        <link href="../assets/css/bootstrap.min.css" rel="stylesheet">
-        <link href="../assets/css/bootstrap.css" rel="stylesheet">
-        <link href="../assets/css/bootstrap-theme.min.css" rel="stylesheet">
+      <!--  <link href="../assets/css/bootstrap.min.css" rel="stylesheet">-->
+    <!--cuadro login-->
+     <link href="../assets/css/bootstrap.css" rel="stylesheet">
+       <!--panel-tittle "por favor... +color verde boton ingresar"-->
+      <link href="../assets/css/bootstrap-theme.min.css" rel="stylesheet">
 
-        <link href="../assets/css/owl.carousel.css" rel="stylesheet">
-        <link href="../assets/css/owl.theme.default.min.css" rel="stylesheet">
 
-        <link href="../assets/css/magnific-popup.css" rel="stylesheet">
 
+
+
+         <!--fuente tamaño logo-->
         <link href="../assets/css/style.css" rel="stylesheet">
+
+        <!--este estilo se usa para fondo -->
         <link href="../assets/css/estilos-jose.css" rel="stylesheet">
-        <link href="../assets/font_awesome/css/font-awesome.css" rel="stylesheet">
+
 
 
 
@@ -38,10 +42,13 @@
 
 </head>
 
+<!--body-login en etilos-jose.css-->
 <body class="body-login">
+
+<!--seccion del header-->
 <nav class="navbar navbar-kaizen">
-                   
-                        <div>
+
+
                         <div class="container">
                             <div class="row">
                                 <div class="col-xs-6">
@@ -49,53 +56,42 @@
                                         <a href="../index.html"><img src="../assets/images/LOGO-KG.png"></a>
                                     </div>
                                 </div>
-                                <div class="col-xs-6 text-right">
-                                    <div class="menu m">
-                                        <a href="#"><span ></span></a>
-                                    </div>
-                                </div>
                             </div>
                         </div>
-                    </div>
                 </nav>
+
     <div class="container ">
         <div class="row">
-            <div class="col-md-4 col-md-offset-4">
-                <div class="login-panel panel panel-default">
-                    <div class="panel-heading">
-                       
-                        <h3 class="panel-title">Por favor ingresas tus datos</h3>
-                    </div>
-                    <div class="panel-body">
-                        <form role="form">
-                            <fieldset>
-                                <div class="form-group">
-                                    <input class="form-control" placeholder="Usuario" name="Usuario" type="email" autofocus>
-                                </div>
-                                <div class="form-group">
-                                    <input class="form-control" placeholder="Contraseña" name="Contraseña" type="password" >
-                                </div>
-                                
-                                <!-- Change this to a button or input when using this as a form -->
-                                <a href="PanelControl.html" class="btn btn-lg btn-success btn-block">Ingresar</a>
-                            </fieldset>
-                        </form>
-                    </div>
+          <div class="col-md-4 col-md-offset-4">
+           <div class="login-panel panel panel-default">
+            <div class="panel-heading">
+              <h3 class="panel-title">Por favor ingresas tus datos</h3>
+            </div>
+              <div class="panel-body">
+                <form role="form">
+                 <fieldset>
+                  <div class="form-group">
+                    <input class="form-control" placeholder="Usuario" name="Usuario" type="email" autofocus>
+                  </div>
+                  <div class="form-group">
+                   <input class="form-control" placeholder="Contraseña" name="Contraseña" type="password" >
+                  </div>
+
+                    <a href="PanelControl.html" class="btn btn-lg btn-success btn-block">Ingresar</a>
+                  </fieldset>
+                 </form>
                 </div>
+              </div>
             </div>
         </div>
     </div>
-    <!-- jQuery -->
-    <script src="../vendor/jquery/jquery.min.js"></script>
+
+
 
     <!-- Bootstrap Core JavaScript -->
-    <script src="../vendor/bootstrap/js/bootstrap.min.js"></script>
+    <script src="../assets/js/bootstrap.min.js"></script>
+    <sript src="../assets/js/loginJS.js"></script>
 
-    <!-- Metis Menu Plugin JavaScript -->
-    <script src="../vendor/metisMenu/metisMenu.min.js"></script>
-
-    <!-- Custom Theme JavaScript -->
-    <script src="../dist/js/sb-admin-2.js"></script>
 
 </body>
 
