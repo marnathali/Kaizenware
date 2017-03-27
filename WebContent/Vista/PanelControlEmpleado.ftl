@@ -37,7 +37,8 @@
 </head>
  <body class="color-fondo">
     <div class="main"><!--no necesario-->
-      <header>
+    <#include "/usuarios/header-admin.ftl">
+    <!--  <header>
          <nav class="">
             <div>
               <div class="container">
@@ -55,9 +56,12 @@
                </div>
              </div>
            </nav>
-        </header>
+        </header>-->
 
-        <nav class="menu nav-scroll" id="theMenu" role="navigation">
+ <#include "/usuarios/navbar-employee.ftl">
+
+
+       <!-- <nav class="menu nav-scroll" id="theMenu" role="navigation">
           <div class="menu-wrap">
              <div>
 		<h1 class="logo"><a class="center-block" href="../index.html#home">KAIZENWARE </a> </h1>
@@ -163,8 +167,10 @@
 
         <div id="menuToggle" class="ion-navicon _ion-android-menu"><i class="fa fa-bars"></i>
         </div>
-	</nav>
+	</nav>-->
 <!--fin menu lateral-->
+
+
 
 <!--titulo principal pagina-->
     <div class="row">

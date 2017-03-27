@@ -15,7 +15,7 @@
                     <a href="miperfil.html"><sub>Perfil</sub></a>
                 </td>
                 <td>
-                    <a href="../index.html"><sub>Cerrar Sesi&oacute;n</sub></a>
+                    <a href="Logout" method= "get" ><sub>Cerrar Sesi&oacute;n</sub></a>
                 </td>
             </tr>
         </table>

@@ -46,11 +46,17 @@ public class ControladorLogin extends HttpServlet {
 		}
 		else 
 		{
-			System.out.println("Bienvenido"+ usuario.getNombre_usuario());
-			if(usuario.getRol().getId() == 1 || usuario.getRol().getId() == 2) {
+			//System.out.println("Bienvenido"+ usuario.getNombre_usuario());
+			if(usuario.getRol().getId() == 1 || usuario.getRol().getId() == 2) 
+			{
+				HttpSession session=request.getSession();
+				session.setAttribute("user", user);
 				request.getRequestDispatcher("/Vista/PanelControlGerente.ftl").forward(request, response);
 			}
-			else if (usuario.getRol().getId() == 3) {
+			else if (usuario.getRol().getId() == 3)
+			{
+				HttpSession session=request.getSession();
+				session.setAttribute("user", user);
 				request.getRequestDispatcher("/Vista/PanelControlEmpleado.ftl").forward(request, response);
 			}	
 		}		
