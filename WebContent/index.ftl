@@ -31,7 +31,7 @@
                     <a href="index"><li>Home</li></a>
                     <a href="#about"><li>¿Quienes somos?</li></a>
                     <a href="#contact"><li>Contactanos</li></a>
-                    <a href="Vista/login.html"><li>Iniciar Sesion</li></a>
+                    <a href="Login"><li>Iniciar Sesion</li></a>
                 </ul>
             </div>
         </div>

@@ -11,23 +11,23 @@
 
     <title>Iniciar Sesion</title>
               <!-- logo barra -->
-        <link rel="shortcut icon" type="image/x-icon" href="../assets/images/LOGO-KG.png"/>
+        <link rel="shortcut icon" type="image/x-icon" href="assets/images/LOGO-KG.png"/>
 
-      <!--  <link href="../assets/css/bootstrap.min.css" rel="stylesheet">-->
+      <!--  <link href="assets/css/bootstrap.min.css" rel="stylesheet">-->
     <!--cuadro login-->
-     <link href="../assets/css/bootstrap.css" rel="stylesheet">
+     <link href="assets/css/bootstrap.css" rel="stylesheet">
        <!--panel-tittle "por favor... +color verde boton ingresar"-->
-      <link href="../assets/css/bootstrap-theme.min.css" rel="stylesheet">
+      <link href="assets/css/bootstrap-theme.min.css" rel="stylesheet">
 
 
 
 
 
          <!--fuente tamaño logo-->
-        <link href="../assets/css/style.css" rel="stylesheet">
+        <link href="assets/css/style.css" rel="stylesheet">
 
         <!--este estilo se usa para fondo -->
-        <link href="../assets/css/estilos-jose.css" rel="stylesheet">
+        <link href="assets/css/estilos-jose.css" rel="stylesheet">
 
 
 
@@ -53,7 +53,7 @@
                             <div class="row">
                                 <div class="col-xs-6">
                                      <div class="logo small-img">
-                                        <a href="../index.html"><img src="../assets/images/LOGO-KG.png"></a>
+                                        <a href="index"><img src="assets/images/LOGO-KG.png"></a>
                                     </div>
                                 </div>
                             </div>
@@ -68,16 +68,16 @@
               <h3 class="panel-title">Por favor ingresas tus datos</h3>
             </div>
               <div class="panel-body">
-                <form role="form">
+                <form role="form" method="post" action="Login">
                  <fieldset>
                   <div class="form-group">
-                    <input class="form-control" placeholder="Usuario" name="Usuario" type="email" autofocus>
+                    <input class="form-control" placeholder="Usuario" name="Usuario" type="text" autofocus>
                   </div>
                   <div class="form-group">
-                   <input class="form-control" placeholder="Contraseña" name="Contraseña" type="password" >
+                   <input class="form-control" placeholder="Contraseña" name="Contrasena" type="password" >
                   </div>
 
-                    <a href="PanelControl.html" class="btn btn-lg btn-success btn-block">Ingresar</a>
+                    <input  class="btn btn-lg btn-success btn-block" type="submit" value="Ingresar">
                   </fieldset>
                  </form>
                 </div>

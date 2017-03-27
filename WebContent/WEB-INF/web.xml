@@ -45,6 +45,14 @@
     <servlet-name>index_servlet</servlet-name>
     <url-pattern>/index</url-pattern>
   </servlet-mapping>
+  <servlet>
+    <servlet-name>controlador_login</servlet-name>
+    <servlet-class>controlador.ControladorLogin</servlet-class>
+  </servlet>
+  <servlet-mapping>
+    <servlet-name>controlador_login</servlet-name>
+    <url-pattern>/Login</url-pattern>
+  </servlet-mapping>
   <security-constraint>
     <web-resource-collection>
       <web-resource-name>FreeMarker MVC Views</web-resource-name>
