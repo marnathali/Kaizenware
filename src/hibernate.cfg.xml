@@ -16,9 +16,27 @@
 		<property name="hibernate.show_sql">true</property>
 		<property name="hibernate.format_sql">true</property>
 		        
+
+      <mapping class="modelo.dto.Asistencia" />
+      <mapping class="modelo.dto.Candidato" />
+      <mapping class="modelo.dto.Cargo" />
+      <mapping class="modelo.dto.Cliente" />
+      <mapping class="modelo.dto.Cobro" />
+      <mapping class="modelo.dto.DiaFeriado" />
+      <mapping class="modelo.dto.Divisa" />
+      <mapping class="modelo.dto.Entrevista" />
+      <mapping class="modelo.dto.Falta" />
+      <mapping class="modelo.dto.Habilidad" />
+      <mapping class="modelo.dto.Mes" />
+      <mapping class="modelo.dto.Pago" />
+      <mapping class="modelo.dto.Pais" />
+      <mapping class="modelo.dto.PalabraClave" />
+      <mapping class="modelo.dto.Proyecto" />
       <mapping class="modelo.dto.Rol" />
+      <mapping class="modelo.dto.TipoCargo" />
+      <mapping class="modelo.dto.TipoEntrevista" />
       <mapping class="modelo.dto.Usuario" />
-       
+             
     </session-factory>
 
 </hibernate-configuration>

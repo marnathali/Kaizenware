@@ -9,59 +9,44 @@ import org.hibernate.annotations.Fetch;
 import org.hibernate.annotations.FetchMode;
 
 @Entity
-@Table(name = "rol")
-public class Rol implements Serializable {
-    
+@Table(name = "pais")
+public class Pais implements Serializable{
+	
 	private static final long serialVersionUID = 1L;
 
 	@Id
-	@SequenceGenerator(name="rol_id_generador", sequenceName="secuencia_rol")
-	@GeneratedValue(strategy=GenerationType.SEQUENCE, generator="rol_id_generador")
+	@SequenceGenerator(name="generador_id_pais", sequenceName = "secuencia_pais")
+	@GeneratedValue(strategy = GenerationType.SEQUENCE, generator = "generador_id_pais")
 	private Integer id;
-
-	private String rol;
 	
-	@OneToMany(mappedBy="rol", fetch = FetchType.LAZY)
+	private String pais;
+	
+	@OneToMany(mappedBy = "pais", fetch = FetchType.LAZY)
 	@Fetch(value = FetchMode.SUBSELECT)
-	private List<Usuario> usuarios;
-
+	private List<Candidato> candidatos;
 	
-	public Rol() {
+	//private List<Cliente> clientes;
+	
+	public Pais() {
 		super();
 	}
-
-	public List<Usuario> getUsuarios() {
-		return usuarios;
-	}
-
-	public void setUsuarios(List<Usuario> usuarios) {
-		this.usuarios = usuarios;
-	}
-
+	
 	public Integer getId() {
 		return id;
 	}
-
+	
 	public void setId(Integer id) {
 		this.id = id;
 	}
 	
-	public String getIdString()
-	{
-		if (this.id == null) {
-			return null;
-		}
-		return this.id.toString().replaceAll("\\.", "");
+	public String getPais() {
+		return pais;
 	}
-
-	public String getRol() {
-		return rol;
+	
+	public void setPais(String pais) {
+		this.pais = pais;
 	}
-
-	public void setRol(String rol) {
-		this.rol = rol;
-	}
-
+	
 	@Override
 	public int hashCode() {
 		final int prime = 31;
@@ -69,7 +54,7 @@ public class Rol implements Serializable {
 		result = prime * result + ((id == null) ? 0 : id.hashCode());
 		return result;
 	}
-
+	
 	@Override
 	public boolean equals(Object obj) {
 		if (this == obj)
@@ -78,7 +63,7 @@ public class Rol implements Serializable {
 			return false;
 		if (getClass() != obj.getClass())
 			return false;
-		Rol other = (Rol) obj;
+		Pais other = (Pais) obj;
 		if (id == null) {
 			if (other.id != null)
 				return false;
@@ -86,12 +71,10 @@ public class Rol implements Serializable {
 			return false;
 		return true;
 	}
-
+	
 	@Override
 	public String toString() {
-		return "Rol [id=" + id + ", rol=" + rol + ", usuarios=" + usuarios + "]";
+		return "Pais [id=" + id + ", pais=" + pais + "]";
 	}
-
-    
+	
 }
-
