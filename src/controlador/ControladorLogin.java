@@ -6,6 +6,7 @@ import javax.servlet.annotation.WebServlet;
 import javax.servlet.http.HttpServlet;
 import javax.servlet.http.HttpServletRequest;
 import javax.servlet.http.HttpServletResponse;
+import javax.servlet.http.HttpSession;
 
 import modelo.dto.Usuario;
 
@@ -50,13 +51,13 @@ public class ControladorLogin extends HttpServlet {
 			if(usuario.getRol().getId() == 1 || usuario.getRol().getId() == 2) 
 			{
 				HttpSession session=request.getSession();
-				session.setAttribute("user", user);
-				request.getRequestDispatcher("/Vista/PanelControlGerente.ftl").forward(request, response);
+				session.setAttribute("user", usuario);
+				request.getRequestDispatcher("PanelGerente").forward(request, response);
 			}
 			else if (usuario.getRol().getId() == 3)
 			{
 				HttpSession session=request.getSession();
-				session.setAttribute("user", user);
+				session.setAttribute("user", usuario);
 				request.getRequestDispatcher("/Vista/PanelControlEmpleado.ftl").forward(request, response);
 			}	
 		}		

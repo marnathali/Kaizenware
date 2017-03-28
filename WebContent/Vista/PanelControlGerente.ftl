@@ -37,7 +37,7 @@
 </head>
  <body class="color-fondo">
     <div class="main"><!--no necesario-->
-      <#include "/usuarios/header-admin.ftl">
+      <#include "usuarios/header-admin.ftl">
       <!--<header>
          <nav class="">
             <div>
@@ -58,7 +58,7 @@
            </nav>
         </header>-->
         
-         <#include "/usuarios/navbar-manager.ftl">
+         <#include "usuarios/navbar-manager.ftl">
 
        <!-- <nav class="menu nav-scroll" id="theMenu" role="navigation">
           <div class="menu-wrap">
@@ -77,7 +77,7 @@
                             <a href="miperfil.html"><sub>Perfil</sub></a>
                         </td>
                         <td>
-                            <a href="../index.html"><sub>Cerrar Sesi&oacute;n</sub></a>
+                            <a href="Logout" method="get"><sub>Cerrar Sesi&oacute;n</sub></a>
                         </td>
                     </tr>
                 </table>
@@ -188,7 +188,7 @@
 
     <!--cuerpo -->
     <div class="contenedor-principal">
-        <h2>Bienvenido a tu espacio de trabajo</h2>
+        <h2>Bienvenido ${Session.user.idRolString} ${Session.user.rol.rol} ${Session.user.nombre_usuario}</h2>
 
 <section id="video" class="youtube">
 
@@ -365,24 +365,24 @@
 
         <!-- Scripts section -->
        <script src="https://apis.google.com/js/platform.js"></script>
-        <script src="../assets/js/jquery-3.1.1.js"></script>
-        <script src="../assets/js/desplegable.js"></script>
-        <script src="../assets/js/jquery.js"></script>
-        <script src="../assets/js/bootstrap.min.js"></script>
-        <script src="../assets/js/owl.carousel.min.js"></script>
-        <script src="../assets/js/jquery.magnific-popup.js"></script>
-        <script src="../assets/js/script.js"></script>
-        <script src="../assets/js/auth.js"></script>
+        <script src="assets/js/jquery-3.1.1.js"></script>
+        <script src="assets/js/desplegable.js"></script>
+        <script src="assets/js/jquery.js"></script>
+        <script src="assets/js/bootstrap.min.js"></script>
+        <script src="assets/js/owl.carousel.min.js"></script>
+        <script src="assets/js/jquery.magnific-popup.js"></script>
+        <script src="assets/js/script.js"></script>
+        <script src="assets/js/auth.js"></script>
 				<!--scripts para calendario-->
 				<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
 		    <script src="https://cdnjs.cloudflare.com/ajax/libs/underscore.js/1.8.3/underscore-min.js"></script>
 		    <script src="https://cdnjs.cloudflare.com/ajax/libs/moment.js/2.10.6/moment.min.js"></script>
-		    <script src="../assets/js/clndr.js"></script>
-		    <script src="../assets/js/demo.js"></script>
+		    <script src="assets/js/clndr.js"></script>
+		    <script src="assets/js/demo.js"></script>
 				<!-- Morris Charts JavaScript -->
-		    <script src="../assets/js/raphael.min.js"></script>
-		    <script src="../assets/js/morris.min.js"></script>
-		    <script src="../assets/js/morris-data.js"></script>
+		    <script src="assets/js/raphael.min.js"></script>
+		    <script src="assets/js/morris.min.js"></script>
+		    <script src="assets/js/morris-data.js"></script>
 
     </body>
 </html>

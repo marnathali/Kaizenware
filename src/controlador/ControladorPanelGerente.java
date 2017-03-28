@@ -12,44 +12,29 @@ import javax.servlet.http.HttpSession;
 
 import modelo.dto.Usuario;
 
-/**
- * Servlet implementation class ControladorLoginPerfil
- */
-@WebServlet("/ControladorLoginPerfil")
-public class ControladorLoginPerfil extends HttpServlet {
+@WebServlet("/ControladorPanelGerente")
+public class ControladorPanelGerente extends HttpServlet {
 	private static final long serialVersionUID = 1L;
-
-    /**
-     * Default constructor. 
-     */
-    public ControladorLoginPerfil() {
-        // TODO Auto-generated constructor stub
+       
+    public ControladorPanelGerente() {
+        super();
     }
 
-	/**
-	 * @see HttpServlet#doGet(HttpServletRequest request, HttpServletResponse response)
-	 */
 	protected void doGet(HttpServletRequest request, HttpServletResponse response) throws ServletException, IOException {
-      
 		HttpSession session = request.getSession(false); //debe ser false por la autenticacion
-		
 		if(session!= null)
 		{
-			Usuario user = (Usuario) session.getAttribute("user");
-			System.out.print("Bienvenido" + user.getNombre_usuario());
+			request.getRequestDispatcher("/Vista/PanelControlGerente.ftl").forward(request, response);
 		}else
 		{
 			System.out.print("Por favor login primero");
 			RequestDispatcher rd= request.getRequestDispatcher("/Vista/login.ftl");
 		}
+		
 	}
 
-	/**
-	 * @see HttpServlet#doPost(HttpServletRequest request, HttpServletResponse response)
-	 */
-	protected void doPost(HttpServletRequest request, HttpServletResponse response) throws ServletException, IOException 
-	{
-		
+	protected void doPost(HttpServletRequest request, HttpServletResponse response) throws ServletException, IOException {
+		doGet(request, response);
 	}
 
 }

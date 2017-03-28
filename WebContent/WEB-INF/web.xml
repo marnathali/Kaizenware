@@ -45,37 +45,38 @@
     <servlet-name>index_servlet</servlet-name>
     <url-pattern>/index</url-pattern>
   </servlet-mapping>
-  
   <servlet>
     <servlet-name>controlador_login</servlet-name>
     <servlet-class>controlador.ControladorLogin</servlet-class>
   </servlet>
-  
   <servlet-mapping>
     <servlet-name>controlador_login</servlet-name>
     <url-pattern>/Login</url-pattern>
   </servlet-mapping>
-  
-   <servlet>
+  <servlet>
     <servlet-name>controlador_loginperfil</servlet-name>
     <servlet-class>controlador.ControladorLoginPerfil</servlet-class>
   </servlet>
-  
   <servlet-mapping>
     <servlet-name>controlador_loginperfil</servlet-name>
     <url-pattern>/Profile</url-pattern>
   </servlet-mapping>
-  
-   <servlet>
+  <servlet>
     <servlet-name>controlador_logout</servlet-name>
     <servlet-class>controlador.ControladorLogout</servlet-class>
   </servlet>
-  
   <servlet-mapping>
     <servlet-name>controlador_logout</servlet-name>
     <url-pattern>/Logout</url-pattern>
   </servlet-mapping>
-  
+  <servlet>
+    <servlet-name>controlador_panel_gerente</servlet-name>
+    <servlet-class>controlador.ControladorPanelGerente</servlet-class>
+  </servlet>
+  <servlet-mapping>
+    <servlet-name>controlador_panel_gerente</servlet-name>
+    <url-pattern>/PanelGerente</url-pattern>
+  </servlet-mapping>
   <security-constraint>
     <web-resource-collection>
       <web-resource-name>FreeMarker MVC Views</web-resource-name>
